@@ -28,4 +28,8 @@ public class Stack<T> {
     public void push(T value){
         list.add(value);
     }
+
+    public T pop(){
+        return list.removeLast();
+    }
 }
