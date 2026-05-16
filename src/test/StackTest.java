@@ -25,4 +25,13 @@ public class StackTest {
         assertEquals(20, stack.pop());
         assertEquals(10, stack.pop());
     }
+
+    @Test
+    public void testPeek(){
+        Stack<String> stack = new Stack<>();
+
+        stack.push("hello");
+
+        assertEquals("hello", stack.peek());
+    }
 }
