@@ -32,6 +32,10 @@ public class HashMap <K, V>{
     private Entry<K, V>[] buckets;
     private int capacity = 100;
 
+    /**
+     * Constructor for a HashMap
+     */
+
     public HashMap(){
         buckets = new Entry[capacity];
     }
