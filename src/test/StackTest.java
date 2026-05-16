@@ -10,4 +10,14 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 
 public class StackTest {
+    @Test
+    public void testPushPop(){
+        Stack<Integer> stack = new Stack<>();
+
+        stack.push(10);
+        stack.push(20);
+
+        assertEquals(20, stack.pop());
+        assertEquals(10, stack.pop());
+    }
 }
