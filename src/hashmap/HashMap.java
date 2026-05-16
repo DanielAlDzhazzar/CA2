@@ -79,6 +79,13 @@ public class HashMap <K, V>{
         return null;
     }
 
+    /**
+     * Method to check whether HashMap has provided key
+     *
+     * @param key to be searched for
+     * @return true if key exist, false if not
+     */
+
     public boolean containsKey(K key){
         return get(key) != null;
     }
