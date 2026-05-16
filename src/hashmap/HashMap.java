@@ -58,6 +58,13 @@ public class HashMap <K, V>{
         buckets[index] = newEntry;
     }
 
+    /**
+     * Method to get a value associated with provided key
+     *
+     * @param key to be searched for
+     * @return value associated with provided key
+     */
+
     public V get(K key){
         int index = Math.abs(key.hashCode()) % capacity;
 
