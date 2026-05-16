@@ -6,7 +6,7 @@ package list;
  * @param <T> type of data stored in a list
  */
 
-public interface myList<T> {
+public interface MyList<T> {
     void add(T value);
     T get(int index);
     boolean contains(T value);
