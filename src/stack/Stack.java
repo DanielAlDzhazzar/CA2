@@ -46,7 +46,7 @@ public class Stack<T> {
      */
 
     public T peek(){
-        if(list.isEmpty()){
+        if(isEmpty()){
             return null;
         }
 
