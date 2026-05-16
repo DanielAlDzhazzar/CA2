@@ -65,4 +65,11 @@ public class StackTest {
         assertEquals(5, stack.pop());
         assertEquals(5, stack.pop());
     }
+
+    @Test
+    public void testPeekEmpty(){
+        Stack<Integer> stack = new Stack<>();
+
+        assertNull(stack.peek());
+    }
 }
