@@ -10,6 +10,11 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 
 public class StackTest {
+
+    /**
+     * Test to check pushing and popping
+     */
+
     @Test
     public void testPushPop(){
         Stack<Integer> stack = new Stack<>();
