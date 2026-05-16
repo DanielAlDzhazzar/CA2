@@ -35,6 +35,10 @@ public class MiniSearchEngine {
         buildIndex();
     }
 
+    /**
+     * Method to build an inverted index from all files
+     */
+
     public void buildIndex(){
         for(String file : files){
             String text = FileProcessor.readFile(file);
