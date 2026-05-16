@@ -21,6 +21,12 @@ public class LinkedList<T> implements MyList<T>{
         size = 0;
     }
 
+    /**
+     * Method to add new data to the end of a LinkedList
+     *
+     * @param value value to add
+     */
+
     @Override
     public void add(T value){
         Node<T> newNode = new Node<>(value);
