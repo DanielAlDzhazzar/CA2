@@ -82,4 +82,9 @@ public class LinkedList<T> implements MyList<T>{
         }
         return false;
     }
+
+    @Override
+    public int size() {
+        return size;
+    }
 }
