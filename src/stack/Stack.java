@@ -53,6 +53,12 @@ public class Stack<T> {
         return list.get(list.size() - 1);
     }
 
+    /**
+     * Method to check whether Stack is empty
+     *
+     * @return true if yes, false if no
+     */
+
     public boolean isEmpty(){
         return list.isEmpty();
     }
