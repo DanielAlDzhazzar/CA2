@@ -62,4 +62,9 @@ public class MiniSearchEngine {
             }
         }
     }
+
+    public HashMap<String, LinkedList<String>> getInvertedIndex(){
+        return invertedIndex;
+    }
+
 }
