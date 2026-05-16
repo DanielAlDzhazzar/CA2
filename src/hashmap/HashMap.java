@@ -90,6 +90,12 @@ public class HashMap <K, V>{
         return get(key) != null;
     }
 
+    /**
+     * Method to get all keys stored in a HashMap
+     *
+     * @return array of all keys
+     */
+
     public Object[] getKeys(){
         LinkedList<K> keys = new LinkedList<>();
 
