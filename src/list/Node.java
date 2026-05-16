@@ -10,6 +10,12 @@ public class Node<T> {
     T data;
     Node<T> next;
 
+    /**
+     * Creates a new node
+     *
+     * @param data data to be stored in created node
+     */
+
     public Node(T data){
         this.data = data;
         this.next = null;
