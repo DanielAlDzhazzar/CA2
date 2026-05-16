@@ -66,6 +66,10 @@ public class StackTest {
         assertEquals(5, stack.pop());
     }
 
+    /**
+     * Test to check empty list
+     */
+
     @Test
     public void testPeekEmpty(){
         Stack<Integer> stack = new Stack<>();
