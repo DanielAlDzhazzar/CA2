@@ -11,6 +11,10 @@ public class LinkedList<T> implements MyList<T>{
     private Node<T> tail;
     private int size;
 
+    /**
+     * No argument constructor for creation of empty linked list
+     */
+
     public LinkedList(){
         head = null;
         tail = null;
