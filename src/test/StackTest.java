@@ -51,6 +51,10 @@ public class StackTest {
         assertNull(stack.pop());
     }
 
+    /**
+     * Test to check duplicate values
+     */
+
     @Test
     public void testDuplicates(){
         Stack<Integer> stack = new Stack<>();
@@ -61,5 +65,4 @@ public class StackTest {
         assertEquals(5, stack.pop());
         assertEquals(5, stack.pop());
     }
-
 }
