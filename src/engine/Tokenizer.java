@@ -17,6 +17,6 @@ public class Tokenizer {
         text = text.toLowerCase();
         text = text.replaceAll("[^a-z0-9 ]", " ");
 
-        return text.split("\\\\s+");
+        return text.split("\\s+");
     }
 }
