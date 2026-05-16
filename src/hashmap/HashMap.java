@@ -57,4 +57,18 @@ public class HashMap <K, V>{
         newEntry.next = buckets[index];
         buckets[index] = newEntry;
     }
+
+    public V get(K key){
+        int index = Math.abs(key.hashCode()) % capacity;
+
+        Entry<K, V> current = buckets[index];
+
+        while(current != null){
+            if(current.key.equals(key)){
+                return current.value;
+            }
+            current = current.next;
+        }
+        return null;
+    }
 }
