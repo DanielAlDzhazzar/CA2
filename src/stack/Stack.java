@@ -29,6 +29,12 @@ public class Stack<T> {
         list.add(value);
     }
 
+    /**
+     * Method to remove and return the top value
+     *
+     * @return removed value
+     */
+
     public T pop(){
         return list.removeLast();
     }
