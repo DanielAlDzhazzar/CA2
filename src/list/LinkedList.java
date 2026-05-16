@@ -137,4 +137,11 @@ public class LinkedList<T> implements MyList<T>{
         size--;
         return value;
     }
+
+    @Override
+    public void clear(){
+        head = null;
+        tail = null;
+        size = 0;
+    }
 }
