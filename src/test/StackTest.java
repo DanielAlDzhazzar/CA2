@@ -5,6 +5,9 @@ import stack.Stack;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class StackTest {
+/**
+ * Tests for Stack
+ */
 
+public class StackTest {
 }
