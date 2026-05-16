@@ -93,4 +93,9 @@ public class LinkedList<T> implements MyList<T>{
     public int size() {
         return size;
     }
+
+    @Override
+    public boolean isEmpty() {
+        return size == 0;
+    }
 }
