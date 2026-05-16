@@ -10,6 +10,14 @@ import java.io.IOException;
  */
 
 public class FileProcessor {
+
+    /**
+     * Method to read text from a file
+     *
+     * @param filename name of a file to read
+     * @return file content
+     */
+
     public static String readFile(String filename){
         StringBuilder builder = new StringBuilder();
 
