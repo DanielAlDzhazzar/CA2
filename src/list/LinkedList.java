@@ -42,6 +42,13 @@ public class LinkedList<T> implements MyList<T>{
         size++;
     }
 
+    /**
+     * Method to return an element from a specified index
+     *
+     * @param index position in list
+     * @return data at provided position
+     */
+
     @Override
     public T get(int index){
         if(index < 0 || index >= size){
