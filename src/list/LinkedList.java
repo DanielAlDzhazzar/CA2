@@ -63,6 +63,13 @@ public class LinkedList<T> implements MyList<T>{
         return current.data;
     }
 
+    /**
+     * Method to check whether the list contains a value provided by user
+     *
+     * @param value to be searched for
+     * @return whether user-provided value was found in a LinkedList
+     */
+
     @Override
     public boolean contains(T value){
         Node<T> current = head;
