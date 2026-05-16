@@ -104,4 +104,31 @@ public class LinkedList<T> implements MyList<T>{
     public boolean isEmpty() {
         return size == 0;
     }
+
+    @Override
+    public T removeLast(){
+        if(isEmpty()){
+            return null;
+        }
+
+        if(head == tail){
+            T value = head.data;
+            head = null;
+            tail = null;
+            size--;
+            return value;
+        }
+
+        Node<T> current = head;
+
+        while(current.next != null){
+            current = current.next;
+        }
+
+        T value = tail.data;
+        tail = current;
+        tail.next = null;
+        size--;
+        return value;
+    }
 }
