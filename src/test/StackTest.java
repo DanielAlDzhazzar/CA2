@@ -26,6 +26,10 @@ public class StackTest {
         assertEquals(10, stack.pop());
     }
 
+    /**
+     * Test to check peek
+     */
+
     @Test
     public void testPeek(){
         Stack<String> stack = new Stack<>();
