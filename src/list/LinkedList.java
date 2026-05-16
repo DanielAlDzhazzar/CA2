@@ -105,6 +105,12 @@ public class LinkedList<T> implements MyList<T>{
         return size == 0;
     }
 
+    /**
+     * Method to remove last element in a LinkedList
+     *
+     * @return removed element
+     */
+
     @Override
     public T removeLast(){
         if(isEmpty()){
