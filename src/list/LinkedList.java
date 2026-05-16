@@ -41,4 +41,18 @@ public class LinkedList<T> implements MyList<T>{
         }
         size++;
     }
+
+    @Override
+    public T get(int index){
+        if(index < 0 || index >= size){
+            throw new IndexOutOfBoundsException("Invalid index");
+        }
+
+        Node<T> current = head;
+
+        for(int i = 0; i < index; i++){
+            current = current.next;
+        }
+        return current.data;
+    }
 }
