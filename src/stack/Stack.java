@@ -63,6 +63,12 @@ public class Stack<T> {
         return list.isEmpty();
     }
 
+    /**
+     * Method to return size of a Stack
+     *
+     * @return size of a Stack
+     */
+
     public int size(){
         return list.size();
     }
