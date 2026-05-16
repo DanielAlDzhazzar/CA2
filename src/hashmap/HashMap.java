@@ -89,4 +89,25 @@ public class HashMap <K, V>{
     public boolean containsKey(K key){
         return get(key) != null;
     }
+
+    public Object[] getKeys(){
+        LinkedList<K> keys = new LinkedList<>();
+
+        for(Entry<K, V> bucket : buckets){
+            Entry<K, V> current = bucket;
+
+            while(current != null){
+                keys.add(current.key);
+                current = current.next;
+            }
+        }
+
+        Object[] result = new Object[keys.size()];
+
+        for(int i = 0; i < keys.size(); i++){
+            result[i] = keys.get(i);
+        }
+
+        return result;
+    }
 }
