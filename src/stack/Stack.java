@@ -38,4 +38,12 @@ public class Stack<T> {
     public T pop(){
         return list.removeLast();
     }
+
+    public T peek(){
+        if(list.isEmpty()){
+            return null;
+        }
+
+        return list.get(list.size() - 1);
+    }
 }
