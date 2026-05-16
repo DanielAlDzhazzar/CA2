@@ -10,6 +10,14 @@ import list.LinkedList;
  */
 
 public class HashMap <K, V>{
+
+    /**
+     * Method to store HashMap key-value
+     *
+     * @param <K> key type
+     * @param <V> value type
+     */
+
     private static class Entry<K, V>{
         K key;
         V value;
