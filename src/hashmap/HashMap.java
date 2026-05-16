@@ -28,4 +28,11 @@ public class HashMap <K, V>{
             this.value = value;
         }
     }
+
+    private Entry<K, V>[] buckets;
+    private int capacity = 100;
+
+    public HashMap(){
+        buckets = new Entry[capacity];
+    }
 }
