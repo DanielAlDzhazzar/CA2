@@ -94,6 +94,12 @@ public class LinkedList<T> implements MyList<T>{
         return size;
     }
 
+    /**
+     * Method to check whether the LinkedList is empty
+     *
+     * @return true if empty, false if not
+     */
+
     @Override
     public boolean isEmpty() {
         return size == 0;
