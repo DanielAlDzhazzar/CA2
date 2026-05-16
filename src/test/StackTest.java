@@ -38,4 +38,13 @@ public class StackTest {
 
         assertEquals("hello", stack.peek());
     }
+
+    @Test
+    public void testEmptyStack(){
+        Stack<Integer> stack = new Stack<>();
+
+        assertTrue(stack.isEmpty());
+        assertNull(stack.pop());
+    }
+
 }
