@@ -138,6 +138,10 @@ public class LinkedList<T> implements MyList<T>{
         return value;
     }
 
+    /**
+     * Method to remove all content from a LinkedList
+     */
+
     @Override
     public void clear(){
         head = null;
