@@ -127,7 +127,7 @@ public class LinkedList<T> implements MyList<T>{
 
         Node<T> current = head;
 
-        while(current.next != null){
+        while(current.next != tail){
             current = current.next;
         }
 
