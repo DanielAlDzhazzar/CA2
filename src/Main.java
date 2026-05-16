@@ -4,6 +4,10 @@ import list.LinkedList;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * Method to let user interact with a program
+ */
+
 public class Main {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
