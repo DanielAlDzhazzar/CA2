@@ -19,6 +19,12 @@ public class Stack<T> {
         list = new LinkedList<>();
     }
 
+    /**
+     * Method to add a new value to a Stack
+     *
+     * @param value to be inserted
+     */
+
     public void push(T value){
         list.add(value);
     }
