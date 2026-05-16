@@ -18,4 +18,8 @@ public class Stack<T> {
     public Stack(){
         list = new LinkedList<>();
     }
+
+    public void push(T value){
+        list.add(value);
+    }
 }
