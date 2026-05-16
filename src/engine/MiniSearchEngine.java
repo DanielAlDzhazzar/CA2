@@ -34,4 +34,28 @@ public class MiniSearchEngine {
         invertedIndex = new HashMap<>();
         buildIndex();
     }
+
+    public void buildIndex(){
+        for(String file : files){
+            String text = FileProcessor.readFile(file);
+            String[] words = Tokenizer.tokenize(text);
+
+            for(String word : words){
+                if(word.isBlank()){
+                    continue;
+                }
+
+                LinkedList<String> fileList = invertedIndex.get(word);
+
+                if(fileList == null){
+                    fileList = new LinkedList<>();
+                    fileList.add(file);
+                    invertedIndex.put(word, fileList);
+                }
+                else if(!fileList.contains(file)){
+                    fileList.add(file);
+                }
+            }
+        }
+    }
 }
