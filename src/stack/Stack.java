@@ -39,6 +39,12 @@ public class Stack<T> {
         return list.removeLast();
     }
 
+    /**
+     * Method to get a top value
+     *
+     * @return
+     */
+
     public T peek(){
         if(list.isEmpty()){
             return null;
