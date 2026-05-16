@@ -83,6 +83,12 @@ public class LinkedList<T> implements MyList<T>{
         return false;
     }
 
+    /**
+     * Method to return current size of a LinkedList
+     *
+     * @return current size of a LinkedList
+     */
+
     @Override
     public int size() {
         return size;
