@@ -77,6 +77,10 @@ public class StackTest {
         assertNull(stack.peek());
     }
 
+    /**
+     * Test to check Stack LIFO compliance
+     */
+
     @Test
     public void testLIFOOrder(){
         Stack<Integer> stack = new Stack<>();
