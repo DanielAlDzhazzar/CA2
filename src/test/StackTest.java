@@ -78,7 +78,7 @@ public class StackTest {
     }
 
     /**
-     * Test to check Stack LIFO compliance
+     * Test to check Stacks LIFO compliance
      */
 
     @Test
