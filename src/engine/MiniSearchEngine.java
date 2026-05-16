@@ -26,10 +26,12 @@ public class MiniSearchEngine {
             "data/file10.txt"
     };
 
+    /**
+     * Constructor for MiniSearchEngine
+     */
+
     public MiniSearchEngine(){
         invertedIndex = new HashMap<>();
         buildIndex();
     }
-
-
 }
