@@ -11,6 +11,10 @@ import list.LinkedList;
 public class Stack<T> {
     private LinkedList<T> list;
 
+    /**
+     * No argument constructor of a Stack
+     */
+
     public Stack(){
         list = new LinkedList<>();
     }
