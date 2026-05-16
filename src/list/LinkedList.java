@@ -20,4 +20,19 @@ public class LinkedList<T> implements MyList<T>{
         tail = null;
         size = 0;
     }
+
+    @Override
+    public void add(T value){
+        Node<T> newNode = new Node<>(value);
+
+        if (head == null){
+            head = newNode;
+            tail = newNode;
+        }
+        else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+        size++;
+    }
 }
