@@ -52,4 +52,8 @@ public class Stack<T> {
 
         return list.get(list.size() - 1);
     }
+
+    public boolean isEmpty(){
+        return list.isEmpty();
+    }
 }
