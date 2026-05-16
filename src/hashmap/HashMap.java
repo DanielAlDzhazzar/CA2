@@ -39,4 +39,22 @@ public class HashMap <K, V>{
     public HashMap(){
         buckets = new Entry[capacity];
     }
+
+    public void put(K key, V value){
+        int index = Math.abs(key.hashCode()) % capacity;
+
+        Entry<K, V> current = buckets[index];
+
+        while(current != null){
+            if(current.key.equals(key)){
+                current.value = value;
+                return;
+            }
+            current = current.next;
+        }
+
+        Entry<K, V> newEntry = new Entry<>(key, value);
+        newEntry.next = buckets[index];
+        buckets[index] = newEntry;
+    }
 }
